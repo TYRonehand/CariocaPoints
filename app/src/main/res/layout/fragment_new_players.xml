@@ -1,0 +1,100 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.cga.cariocapoints.NewPlayers"
+    tools:background="@mipmap/fondo">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:textAlignment="center">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:text="Nuevo Jugador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:textIsSelectable="false"
+            android:typeface="serif"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            android:layout_marginBottom="12dp"
+            android:textColor="@android:color/white"
+            android:background="#94C337" />
+
+        <TextView
+            android:text="Nombre Jugador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etiqueta1"
+            android:layout_marginTop="12dp"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/nombreTextView"
+            android:layout_margin="6dp"
+            tools:backgroundTintMode="src_over"
+            android:singleLine="false"
+            android:selectAllOnFocus="false"
+            android:textAlignment="textStart"
+            android:hint="nombre" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="Agregar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/agregarnombreBtn"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:text="Jugadores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:textIsSelectable="false"
+            android:typeface="serif"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            android:layout_marginBottom="12dp"
+            android:textColor="@android:color/white"
+            android:background="#94C337" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:paddingTop="10dp"
+            android:layout_marginTop="10dp"
+            android:animationCache="false"
+            android:textAlignment="textStart"
+            android:headerDividersEnabled="true"
+            android:footerDividersEnabled="true"
+            android:id="@+id/jugadoresListView"
+            android:background="#E5FFB1" />
+
+    </LinearLayout>
+
+</FrameLayout>

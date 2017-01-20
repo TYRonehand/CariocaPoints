@@ -1,0 +1,92 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.cga.cariocapoints.StartGame"
+    android:orientation="vertical"
+    android:background="@mipmap/fondo">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <TextView
+                android:id="@+id/textView2"
+                android:text="Partida Actual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:textIsSelectable="false"
+                android:typeface="serif"
+                android:textSize="24sp"
+                android:textStyle="normal|bold"
+                android:textAlignment="center"
+                android:layout_marginBottom="12dp"
+                android:textColor="@android:color/white"
+                android:background="#94C337" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_margin="16dp">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/objetivoSpinner"
+                android:layout_weight="0.01"
+                android:textAlignment="center"
+                android:spinnerMode="dialog" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:text="Asigna Puntajes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:textIsSelectable="false"
+            android:typeface="serif"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            android:layout_marginBottom="12dp"
+            android:textColor="@android:color/white"
+            android:background="#94C337"
+            android:layout_weight="0.00" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="277dp"
+            android:layout_margin="8dp"
+            android:paddingTop="10dp"
+            android:layout_marginTop="10dp"
+            android:animationCache="false"
+            android:textAlignment="textStart"
+            android:headerDividersEnabled="true"
+            android:footerDividersEnabled="true"
+            android:id="@+id/jugadoresListViewSG"
+            android:background="#E5FFB1"
+            android:layout_weight="0.22" />
+
+        <Button
+            android:text="Finalizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/terminarBtn"
+            android:layout_weight="0.01"
+            android:padding="6dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            tools:background="@android:color/background_light"
+            android:backgroundTint="@android:color/background_light" />
+
+    </LinearLayout>
+
+</FrameLayout>

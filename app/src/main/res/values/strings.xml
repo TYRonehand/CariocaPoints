@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CariocaPoints</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="puntajes_por_partida">Puntajes por Partida</string>
+    <string name="seleccione_partida">Seleccione Partida</string>
+</resources>

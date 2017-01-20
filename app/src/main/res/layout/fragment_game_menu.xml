@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.cga.cariocapoints.GameMenu"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:text="Preparación"
+        android:layout_width="match_parent"
+        android:id="@+id/textView5"
+        tools:background="@android:color/holo_green_light"
+        android:layout_margin="4dp"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="false"
+        android:typeface="serif"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/background_light"
+        android:textAlignment="center"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:text="Jugadores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/playersBtn"
+        android:layout_weight="0.21"
+        android:padding="8dp"
+        android:layout_margin="16dp" />
+
+    <Button
+        android:text="Iniciar Partida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/startBtn"
+        android:layout_weight="0.21"
+        android:padding="8dp"
+        android:layout_margin="16dp" />
+
+</LinearLayout>
